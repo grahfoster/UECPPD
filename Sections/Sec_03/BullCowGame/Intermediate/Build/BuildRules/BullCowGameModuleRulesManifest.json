@@ -1,0 +1,8 @@
+{
+	"SourceFiles": [
+		"C:\\Users\\grahf\\Documents\\Unreal Engine 4\\Projects\\UECPPD\\Sections\\Sec_03\\BullCowGame\\Source\\BullCowGame\\BullCowGame.Build.cs",
+		"C:\\Users\\grahf\\Documents\\Unreal Engine 4\\Projects\\UECPPD\\Sections\\Sec_03\\BullCowGame\\Source\\BullCowGame.Target.cs",
+		"C:\\Users\\grahf\\Documents\\Unreal Engine 4\\Projects\\UECPPD\\Sections\\Sec_03\\BullCowGame\\Source\\BullCowGameEditor.Target.cs"
+	],
+	"EngineVersion": "4.25.4"
+}

@@ -1,0 +1,14 @@
+{
+	"Targets": [
+		{
+			"Name": "BullCowGame",
+			"Path": "C:\\Users\\grahf\\Documents\\Unreal Engine 4\\Projects\\UECPPD\\Sections\\Sec_03\\BullCowGame\\Source\\BullCowGame.Target.cs",
+			"Type": "Game"
+		},
+		{
+			"Name": "BullCowGameEditor",
+			"Path": "C:\\Users\\grahf\\Documents\\Unreal Engine 4\\Projects\\UECPPD\\Sections\\Sec_03\\BullCowGame\\Source\\BullCowGameEditor.Target.cs",
+			"Type": "Editor"
+		}
+	]
+}
