@@ -19,7 +19,7 @@ void UWorldPosition::BeginPlay()
 {
 	Super::BeginPlay();
 	
-	UE_LOG(LogTemp, Display, TEXT("%s's world position: %s."),
+	UE_LOG(LogTemp, Warning, TEXT("%s's world position: %s."),
 		*GetOwner()->GetName(), *GetOwner()->GetActorLocation().ToString());
 }
 
