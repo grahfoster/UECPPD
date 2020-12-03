@@ -26,7 +26,7 @@ void UOpenDoor::BeginPlay()
 // Called every frame
 void UOpenDoor::TickComponent(float DeltaTime, ELevelTick TickType, FActorComponentTickFunction* ThisTickFunction)
 {
-	Super::TickComponent(DeltaTime, TickType, ThisTickFunction);;
+	Super::TickComponent(DeltaTime, TickType, ThisTickFunction);
 
 	// check if enough mass is overlapping trigger volume
 	if (FindTotalOverlappingMass() >= RequiredOverlappingMass)

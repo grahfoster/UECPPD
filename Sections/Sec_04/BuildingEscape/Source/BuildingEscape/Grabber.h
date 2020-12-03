@@ -30,7 +30,9 @@ private:
 	UPROPERTY(EditAnywhere)
 	UInputComponent* InputComponent = nullptr;
 	UPROPERTY(EditAnywhere)
-	float Reach = 500.f;	// distance from which player can grab objects
+	float Reach = 200.f;	// distance from which player can grab objects
+	UPROPERTY(EditAnywhere)
+	float HandleLinearDamping = 2.5f;
 
 
 	FVector LineTraceStart;	// = DefaultPawn's origin location

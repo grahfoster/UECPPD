@@ -61,7 +61,8 @@ DEFINE_VTABLE_PTR_HELPER_CTOR_CALLER(UGrabber); \
 #define BuildingEscape_Source_BuildingEscape_Grabber_h_14_PRIVATE_PROPERTY_OFFSET \
 	FORCEINLINE static uint32 __PPO__PhysicsHandleComponent() { return STRUCT_OFFSET(UGrabber, PhysicsHandleComponent); } \
 	FORCEINLINE static uint32 __PPO__InputComponent() { return STRUCT_OFFSET(UGrabber, InputComponent); } \
-	FORCEINLINE static uint32 __PPO__Reach() { return STRUCT_OFFSET(UGrabber, Reach); }
+	FORCEINLINE static uint32 __PPO__Reach() { return STRUCT_OFFSET(UGrabber, Reach); } \
+	FORCEINLINE static uint32 __PPO__HandleLinearDamping() { return STRUCT_OFFSET(UGrabber, HandleLinearDamping); }
 
 
 #define BuildingEscape_Source_BuildingEscape_Grabber_h_11_PROLOG

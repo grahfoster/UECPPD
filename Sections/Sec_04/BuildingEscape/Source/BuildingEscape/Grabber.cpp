@@ -26,6 +26,9 @@ void UGrabber::BeginPlay()
 void UGrabber::TickComponent(float DeltaTime, ELevelTick TickType, FActorComponentTickFunction* ThisTickFunction)
 {
 	Super::TickComponent(DeltaTime, TickType, ThisTickFunction);
+	
+	//SetLineTrace();
+	//DrawDebugLine(GetWorld(), LineTraceStart, LineTraceEnd, FColor::Green, false, 0, 100, 10.f);
 
 	// Update location of grabbed object
 	if (PhysicsHandleComponent && PhysicsHandleComponent->GrabbedComponent)
@@ -70,7 +73,15 @@ void UGrabber::Grab()
 
 	if (PhysicsHandleComponent && HitResult.GetActor())
 	{
-		PhysicsHandleComponent->GrabComponentAtLocation(GrabbedComponent, NAME_None, LineTraceEnd);
+		PhysicsHandleComponent->GrabComponentAtLocationWithRotation
+		(
+			GrabbedComponent,
+			NAME_None,
+			LineTraceEnd,
+			(LineTraceEnd - LineTraceStart / Reach).Rotation()
+		);
+		PhysicsHandleComponent->GrabbedComponent->SetEnableGravity(false);
+		PhysicsHandleComponent->GrabbedComponent->SetLinearDamping(HandleLinearDamping);
 	}
 }
 
@@ -79,6 +90,8 @@ void UGrabber::Release()
 {
 	if (PhysicsHandleComponent && PhysicsHandleComponent->GrabbedComponent)
 	{
+		PhysicsHandleComponent->GrabbedComponent->SetEnableGravity(true);
+		PhysicsHandleComponent->GrabbedComponent->SetLinearDamping(0);
 		PhysicsHandleComponent->ReleaseComponent();
 	}
 }
