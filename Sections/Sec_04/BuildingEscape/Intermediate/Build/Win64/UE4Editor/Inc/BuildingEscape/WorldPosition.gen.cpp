@@ -73,7 +73,7 @@ void EmptyLinkFunctionForGeneratedCodeWorldPosition() {}
 		}
 		return OuterClass;
 	}
-	IMPLEMENT_CLASS(UWorldPosition, 805609022);
+	IMPLEMENT_CLASS(UWorldPosition, 4216100575);
 	template<> BUILDINGESCAPE_API UClass* StaticClass<UWorldPosition>()
 	{
 		return UWorldPosition::StaticClass();

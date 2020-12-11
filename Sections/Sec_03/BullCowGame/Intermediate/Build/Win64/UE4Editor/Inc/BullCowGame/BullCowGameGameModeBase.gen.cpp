@@ -74,7 +74,7 @@ void EmptyLinkFunctionForGeneratedCodeBullCowGameGameModeBase() {}
 		}
 		return OuterClass;
 	}
-	IMPLEMENT_CLASS(ABullCowGameGameModeBase, 4151439563);
+	IMPLEMENT_CLASS(ABullCowGameGameModeBase, 2692281622);
 	template<> BULLCOWGAME_API UClass* StaticClass<ABullCowGameGameModeBase>()
 	{
 		return ABullCowGameGameModeBase::StaticClass();

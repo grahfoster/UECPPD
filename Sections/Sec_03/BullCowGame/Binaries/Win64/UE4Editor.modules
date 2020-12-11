@@ -1,7 +1,7 @@
 {
-	"BuildId": "13144385",
+	"BuildId": "14830424",
 	"Modules": 
 	{
-		"BullCowGame": "UE4Editor-BullCowGame-2778.dll"
+		"BullCowGame": "UE4Editor-BullCowGame.dll"
 	}
 }

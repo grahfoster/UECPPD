@@ -1,5 +1,5 @@
 /MANIFEST:EMBED
-/MANIFESTINPUT:"C:\Program Files (x86)\Epic Games\UE_4.25\Engine\Build\Windows\Resources\Default-Win64.manifest"
+/MANIFESTINPUT:"C:\Program Files (x86)\Epic Games\UE_4.26\Engine\Build\Windows\Resources\Default-Win64.manifest"
 /NOLOGO
 /DEBUG
 /errorReport:prompt
@@ -45,6 +45,10 @@
 "C:\Users\grahf\Documents\Unreal Engine 4\Projects\UECPPD\Sections\Sec_04\BuildingEscape\Intermediate\Build\Win64\UE4Editor\Development\BuildingEscape\OpenDoor.gen.cpp.obj"
 "C:\Users\grahf\Documents\Unreal Engine 4\Projects\UECPPD\Sections\Sec_04\BuildingEscape\Intermediate\Build\Win64\UE4Editor\Development\BuildingEscape\WorldPosition.gen.cpp.obj"
 "C:\Users\grahf\Documents\Unreal Engine 4\Projects\UECPPD\Sections\Sec_04\BuildingEscape\Intermediate\Build\Win64\UE4Editor\Development\BuildingEscape\Default.rc2.res"
+"C:\Program Files (x86)\Epic Games\UE_4.26\Engine\Intermediate\Build\Win64\UE4Editor\Development\Engine\UE4Editor-Engine.lib"
+"C:\Program Files (x86)\Epic Games\UE_4.26\Engine\Intermediate\Build\Win64\UE4Editor\Development\Core\UE4Editor-Core.lib"
+"C:\Program Files (x86)\Epic Games\UE_4.26\Engine\Intermediate\Build\Win64\UE4Editor\Development\CoreUObject\UE4Editor-CoreUObject.lib"
+"C:\Program Files (x86)\Epic Games\UE_4.26\Engine\Intermediate\Build\Win64\UE4Editor\Development\InputCore\UE4Editor-InputCore.lib"
 "delayimp.lib"
 "wininet.lib"
 "rpcrt4.lib"
@@ -69,10 +73,6 @@
 "setupapi.lib"
 "dwmapi.lib"
 "imm32.lib"
-"C:\Program Files (x86)\Epic Games\UE_4.25\Engine\Intermediate\Build\Win64\UE4Editor\Development\Engine\UE4Editor-Engine.lib"
-"C:\Program Files (x86)\Epic Games\UE_4.25\Engine\Intermediate\Build\Win64\UE4Editor\Development\Core\UE4Editor-Core.lib"
-"C:\Program Files (x86)\Epic Games\UE_4.25\Engine\Intermediate\Build\Win64\UE4Editor\Development\CoreUObject\UE4Editor-CoreUObject.lib"
-"C:\Program Files (x86)\Epic Games\UE_4.25\Engine\Intermediate\Build\Win64\UE4Editor\Development\InputCore\UE4Editor-InputCore.lib"
 /OUT:"C:\Users\grahf\Documents\Unreal Engine 4\Projects\UECPPD\Sections\Sec_04\BuildingEscape\Binaries\Win64\UE4Editor-BuildingEscape.dll"
 /IMPLIB:"C:\Users\grahf\Documents\Unreal Engine 4\Projects\UECPPD\Sections\Sec_04\BuildingEscape\Intermediate\Build\Win64\UE4Editor\Development\BuildingEscape\UE4Editor-BuildingEscape.suppressed.lib"
 /PDB:"C:\Users\grahf\Documents\Unreal Engine 4\Projects\UECPPD\Sections\Sec_04\BuildingEscape\Binaries\Win64\UE4Editor-BuildingEscape.pdb"

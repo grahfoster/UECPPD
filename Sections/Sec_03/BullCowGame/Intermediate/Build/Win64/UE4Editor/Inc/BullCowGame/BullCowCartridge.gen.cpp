@@ -73,7 +73,7 @@ void EmptyLinkFunctionForGeneratedCodeBullCowCartridge() {}
 		}
 		return OuterClass;
 	}
-	IMPLEMENT_CLASS(UBullCowCartridge, 2375356710);
+	IMPLEMENT_CLASS(UBullCowCartridge, 3290408509);
 	template<> BULLCOWGAME_API UClass* StaticClass<UBullCowCartridge>()
 	{
 		return UBullCowCartridge::StaticClass();

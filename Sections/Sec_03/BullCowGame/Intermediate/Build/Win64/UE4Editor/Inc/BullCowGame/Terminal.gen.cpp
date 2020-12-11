@@ -170,17 +170,17 @@ void EmptyLinkFunctionForGeneratedCodeTerminal() {}
 		static const UE4CodeGen_Private::FMetaDataPairParam Class_MetaDataParams[];
 #endif
 #if WITH_METADATA
-		static const UE4CodeGen_Private::FMetaDataPairParam NewProp_MaxColumns_MetaData[];
+		static const UE4CodeGen_Private::FMetaDataPairParam NewProp_TextUpdated_MetaData[];
 #endif
-		static const UE4CodeGen_Private::FIntPropertyParams NewProp_MaxColumns;
+		static const UE4CodeGen_Private::FMulticastDelegatePropertyParams NewProp_TextUpdated;
 #if WITH_METADATA
 		static const UE4CodeGen_Private::FMetaDataPairParam NewProp_MaxLines_MetaData[];
 #endif
 		static const UE4CodeGen_Private::FIntPropertyParams NewProp_MaxLines;
 #if WITH_METADATA
-		static const UE4CodeGen_Private::FMetaDataPairParam NewProp_TextUpdated_MetaData[];
+		static const UE4CodeGen_Private::FMetaDataPairParam NewProp_MaxColumns_MetaData[];
 #endif
-		static const UE4CodeGen_Private::FMulticastDelegatePropertyParams NewProp_TextUpdated;
+		static const UE4CodeGen_Private::FIntPropertyParams NewProp_MaxColumns;
 		static const UE4CodeGen_Private::FPropertyParamsBase* const PropPointers[];
 		static const FCppClassTypeInfoStatic StaticCppClassTypeInfo;
 		static const UE4CodeGen_Private::FClassParams ClassParams;
@@ -203,12 +203,12 @@ void EmptyLinkFunctionForGeneratedCodeTerminal() {}
 	};
 #endif
 #if WITH_METADATA
-	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_UTerminal_Statics::NewProp_MaxColumns_MetaData[] = {
+	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_UTerminal_Statics::NewProp_TextUpdated_MetaData[] = {
 		{ "Category", "Terminal" },
 		{ "ModuleRelativePath", "Console/Terminal.h" },
 	};
 #endif
-	const UE4CodeGen_Private::FIntPropertyParams Z_Construct_UClass_UTerminal_Statics::NewProp_MaxColumns = { "MaxColumns", nullptr, (EPropertyFlags)0x0040000000000001, UE4CodeGen_Private::EPropertyGenFlags::Int, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(UTerminal, MaxColumns), METADATA_PARAMS(Z_Construct_UClass_UTerminal_Statics::NewProp_MaxColumns_MetaData, UE_ARRAY_COUNT(Z_Construct_UClass_UTerminal_Statics::NewProp_MaxColumns_MetaData)) };
+	const UE4CodeGen_Private::FMulticastDelegatePropertyParams Z_Construct_UClass_UTerminal_Statics::NewProp_TextUpdated = { "TextUpdated", nullptr, (EPropertyFlags)0x0010000010080000, UE4CodeGen_Private::EPropertyGenFlags::InlineMulticastDelegate, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(UTerminal, TextUpdated), Z_Construct_UDelegateFunction_BullCowGame_TextUpdateSignature__DelegateSignature, METADATA_PARAMS(Z_Construct_UClass_UTerminal_Statics::NewProp_TextUpdated_MetaData, UE_ARRAY_COUNT(Z_Construct_UClass_UTerminal_Statics::NewProp_TextUpdated_MetaData)) };
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_UTerminal_Statics::NewProp_MaxLines_MetaData[] = {
 		{ "Category", "Terminal" },
@@ -217,16 +217,16 @@ void EmptyLinkFunctionForGeneratedCodeTerminal() {}
 #endif
 	const UE4CodeGen_Private::FIntPropertyParams Z_Construct_UClass_UTerminal_Statics::NewProp_MaxLines = { "MaxLines", nullptr, (EPropertyFlags)0x0040000000000001, UE4CodeGen_Private::EPropertyGenFlags::Int, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(UTerminal, MaxLines), METADATA_PARAMS(Z_Construct_UClass_UTerminal_Statics::NewProp_MaxLines_MetaData, UE_ARRAY_COUNT(Z_Construct_UClass_UTerminal_Statics::NewProp_MaxLines_MetaData)) };
 #if WITH_METADATA
-	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_UTerminal_Statics::NewProp_TextUpdated_MetaData[] = {
+	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_UTerminal_Statics::NewProp_MaxColumns_MetaData[] = {
 		{ "Category", "Terminal" },
 		{ "ModuleRelativePath", "Console/Terminal.h" },
 	};
 #endif
-	const UE4CodeGen_Private::FMulticastDelegatePropertyParams Z_Construct_UClass_UTerminal_Statics::NewProp_TextUpdated = { "TextUpdated", nullptr, (EPropertyFlags)0x0010000010080000, UE4CodeGen_Private::EPropertyGenFlags::InlineMulticastDelegate, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(UTerminal, TextUpdated), Z_Construct_UDelegateFunction_BullCowGame_TextUpdateSignature__DelegateSignature, METADATA_PARAMS(Z_Construct_UClass_UTerminal_Statics::NewProp_TextUpdated_MetaData, UE_ARRAY_COUNT(Z_Construct_UClass_UTerminal_Statics::NewProp_TextUpdated_MetaData)) };
+	const UE4CodeGen_Private::FIntPropertyParams Z_Construct_UClass_UTerminal_Statics::NewProp_MaxColumns = { "MaxColumns", nullptr, (EPropertyFlags)0x0040000000000001, UE4CodeGen_Private::EPropertyGenFlags::Int, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(UTerminal, MaxColumns), METADATA_PARAMS(Z_Construct_UClass_UTerminal_Statics::NewProp_MaxColumns_MetaData, UE_ARRAY_COUNT(Z_Construct_UClass_UTerminal_Statics::NewProp_MaxColumns_MetaData)) };
 	const UE4CodeGen_Private::FPropertyParamsBase* const Z_Construct_UClass_UTerminal_Statics::PropPointers[] = {
-		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_UTerminal_Statics::NewProp_MaxColumns,
-		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_UTerminal_Statics::NewProp_MaxLines,
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_UTerminal_Statics::NewProp_TextUpdated,
+		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_UTerminal_Statics::NewProp_MaxLines,
+		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_UTerminal_Statics::NewProp_MaxColumns,
 	};
 	const FCppClassTypeInfoStatic Z_Construct_UClass_UTerminal_Statics::StaticCppClassTypeInfo = {
 		TCppClassTypeTraits<UTerminal>::IsAbstract,
@@ -255,7 +255,7 @@ void EmptyLinkFunctionForGeneratedCodeTerminal() {}
 		}
 		return OuterClass;
 	}
-	IMPLEMENT_CLASS(UTerminal, 153521602);
+	IMPLEMENT_CLASS(UTerminal, 2954920328);
 	template<> BULLCOWGAME_API UClass* StaticClass<UTerminal>()
 	{
 		return UTerminal::StaticClass();

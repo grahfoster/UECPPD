@@ -74,7 +74,7 @@ void EmptyLinkFunctionForGeneratedCodeBuildingEscapeGameModeBase() {}
 		}
 		return OuterClass;
 	}
-	IMPLEMENT_CLASS(ABuildingEscapeGameModeBase, 1846219366);
+	IMPLEMENT_CLASS(ABuildingEscapeGameModeBase, 3627789521);
 	template<> BUILDINGESCAPE_API UClass* StaticClass<ABuildingEscapeGameModeBase>()
 	{
 		return ABuildingEscapeGameModeBase::StaticClass();

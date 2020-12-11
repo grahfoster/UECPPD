@@ -25,7 +25,7 @@ void EmptyLinkFunctionForGeneratedCodeBullCowGame_init() {}
 				SingletonFuncArray,
 				UE_ARRAY_COUNT(SingletonFuncArray),
 				PKG_CompiledIn | 0x00000000,
-				0xC6B3460E,
+				0x505EEA98,
 				0x6AED068D,
 				METADATA_PARAMS(nullptr, 0)
 			};

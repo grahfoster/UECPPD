@@ -71,7 +71,7 @@ void EmptyLinkFunctionForGeneratedCodeCartridge() {}
 		}
 		return OuterClass;
 	}
-	IMPLEMENT_CLASS(UCartridge, 1222330714);
+	IMPLEMENT_CLASS(UCartridge, 11162804);
 	template<> BULLCOWGAME_API UClass* StaticClass<UCartridge>()
 	{
 		return UCartridge::StaticClass();
