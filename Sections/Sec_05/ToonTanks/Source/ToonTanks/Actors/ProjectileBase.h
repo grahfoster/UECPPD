@@ -24,9 +24,11 @@ protected:
 private:
 	// components
 	UPROPERTY(VisibleAnywhere, BlueprintReadOnly, Category = "Components", meta = (AllowPrivateAccess = "true"))
+	UStaticMeshComponent* ProjectileMesh = nullptr;
+	UPROPERTY(VisibleAnywhere, BlueprintReadOnly, Category = "Components", meta = (AllowPrivateAccess = "true"))
 	UProjectileMovementComponent* ProjectileMovement = nullptr;
 	UPROPERTY(VisibleAnywhere, BlueprintReadOnly, Category = "Components", meta = (AllowPrivateAccess = "true"))
-	UStaticMeshComponent* ProjectileMesh;
+	UParticleSystemComponent* ParticleTrail = nullptr;
 
 	// variables
 	UPROPERTY(EditDefaultsOnly, Category = "Damage")
@@ -35,6 +37,15 @@ private:
 	float Damage = 50.f;
 	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = "Movement", meta = (AllowPrivateAccess = "true"))
 	float MovementSpeed = 1300.f;
+	UPROPERTY(EditAnywhere, Category = "Effects")
+	UParticleSystem* HitParticle = nullptr;
+	UPROPERTY(EditAnywhere, Category = "Effects")
+	USoundBase* HitSound = nullptr;
+	UPROPERTY(EditAnywhere, Category = "Effects")
+	USoundBase* LaunchSound = nullptr;
+	UPROPERTY(EditAnywhere, Category = "Effects")
+	TSubclassOf<UCameraShakeBase> HitShake;
+
 
 	UFUNCTION()
 	void OnHit(UPrimitiveComponent* HitComp, AActor* OtherActor, UPrimitiveComponent* OtherComp, FVector NormalImpulse, const FHitResult& Hit);

@@ -13,7 +13,7 @@ class TOONTANKS_API UHealthComponent : public UActorComponent
 {
 	GENERATED_BODY()
 
-public:	
+public:
 	// Sets default values for this component's properties
 	UHealthComponent();
 
@@ -27,6 +27,7 @@ protected:
 private:
 	UPROPERTY(EditAnywhere)
 	float DefaultHealth = 100.f;
+
 	float Health = 0.f;
 
 	ATankGameModeBase* GameModeRef;

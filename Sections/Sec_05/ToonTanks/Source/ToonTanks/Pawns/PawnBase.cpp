@@ -3,6 +3,8 @@
 #include "PawnBase.h"
 #include "Components/CapsuleComponent.h"
 #include "ToonTanks/Actors/ProjectileBase.h"
+#include "ToonTanks/Components/HealthComponent.h"
+#include "Kismet/GameplayStatics.h"
 
 // Sets default values
 APawnBase::APawnBase()
@@ -21,6 +23,8 @@ APawnBase::APawnBase()
 
 	ProjectileSpawnPoint = CreateDefaultSubobject<USceneComponent>(TEXT("Projectile Spawn Point"));
 	ProjectileSpawnPoint->SetupAttachment(TurretMesh);
+
+	HealthComponent = CreateDefaultSubobject<UHealthComponent>(TEXT("Health Component"));
 }
 
 void APawnBase::RotateTurret(FVector LookAtTarget)
@@ -30,15 +34,10 @@ void APawnBase::RotateTurret(FVector LookAtTarget)
 
 	FRotator TurretRotation = FVector{ LookAtTargetClean - StartLocation }.Rotation();
 	TurretMesh->SetWorldRotation(TurretRotation);
-	
-	// Update TurretMesh rotation to face the player
 }
 
 void APawnBase::Fire()
 {
-	// Get ProjectileSpawnPoint location and rotation
-	// Spawn projectile class at location facing firing direction
-
 	if (ProjectileClass)
 	{
 		FVector SpawnLocation = ProjectileSpawnPoint->GetComponentLocation();
@@ -50,9 +49,8 @@ void APawnBase::Fire()
 
 void APawnBase::HandleDestruction()
 {
-	// Player death effects (particles, sound, camera shake)
-
-	// For PawnTurret, inform GameMode turret died, then destroy
-	// For PawnTank, inform GameMode player died, then hide components and disable input
+	UGameplayStatics::SpawnEmitterAtLocation(this, DeathParticle, GetActorLocation());
+	UGameplayStatics::PlaySoundAtLocation(this, DeathSound, GetActorLocation());
+	GetWorld()->GetFirstPlayerController()->ClientPlayCameraShake(DeathShake);
 }
 

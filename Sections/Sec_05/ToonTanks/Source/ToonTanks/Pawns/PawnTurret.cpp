@@ -1,8 +1,8 @@
 // Fill out your copyright notice in the Description page of Project Settings.
 
 #include "PawnTurret.h"
-#include "Kismet/GameplayStatics.h"
 #include "PawnTank.h"
+#include "Kismet/GameplayStatics.h"
 
 // Sets default values
 APawnTurret::APawnTurret()
@@ -34,7 +34,7 @@ void APawnTurret::Tick(float DeltaTime)
 {
 	Super::Tick(DeltaTime);
 
-	if (!PlayerPawn || ReturnDistanceToPlayer() > FireRange)
+	if (!PlayerPawn || !PlayerPawn->GetIsPlayerAlive() || ReturnDistanceToPlayer() > FireRange)
 	{
 		return;
 	}
@@ -45,12 +45,12 @@ void APawnTurret::Tick(float DeltaTime)
 void APawnTurret::CheckFireCondition()
 {
 	// if player has despawned, do not fire
-	if (!PlayerPawn)
+	if (!PlayerPawn || !PlayerPawn->GetIsPlayerAlive())
 	{
 		return;
 	}
 
-	// if player is in range and not dead fire
+	// if player is in range and not dead, fire
 	if (ReturnDistanceToPlayer() <= FireRange)
 	{
 		Fire();
